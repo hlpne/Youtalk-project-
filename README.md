@@ -1,46 +1,47 @@
-# YouTalk Blog
+# YouTalk Блог
 
-A modern blog and article page implementation for YouTalk platform.
+Современная реализация страниц блога и статей для платформы YouTalk.
 
-## Pages
+## Страницы
 
-- **blog.html** - Blog listing page with article cards and tag filters
-- **article.html** - Article detail page with full content, sidebar, and CTA section
+- **blog.html** - Страница списка блога с карточками статей и фильтрами по тегам
+- **article.html** - Страница детального просмотра статьи с полным контентом, боковой панелью и секцией призыва к действию
 
-## Features
+## Возможности
 
-- Responsive design (desktop, tablet, mobile)
-- Modern UI with clean typography
-- Tag filtering system
-- Article cards with images and metadata
-- Sidebar with consultation cards, psychologist profiles, and gift packages
-- Newsletter subscription form
-- Social media integration
+- Адаптивный дизайн (десктоп, планшет, мобильный)
+- Современный интерфейс с чистой типографикой
+- Система фильтрации по тегам
+- Карточки статей с изображениями и метаданными
+- Боковая панель с карточками консультаций, профилями психологов и подарочными пакетами
+- Форма подписки на рассылку
+- Интеграция с социальными сетями
 
-## Setup
+## Установка
 
-1. Clone the repository
-2. Open `blog.html` or `article.html` in your browser
-3. All styles are in `css/style.css` and `css/adaptive.css`
+1. Клонируйте репозиторий
+2. Откройте `blog.html` или `article.html` в браузере
+3. Все стили находятся в `css/style.css` и `css/adaptive.css`
 
-## GitHub Setup
+## Структура проекта
 
-After creating a repository on GitHub, run:
-
-```bash
-git remote add origin https://github.com/hlpne/YOUR_REPO_NAME.git
-git push -u origin main
+```
+youtalk/
+├── blog.html          # Страница списка блога
+├── article.html       # Страница статьи
+├── css/
+│   ├── style.css     # Основные стили
+│   └── adaptive.css  # Адаптивные стили
+├── icons/            # Иконки
+└── img/              # Изображения
 ```
 
-Or use the PowerShell script:
-```powershell
-.\setup-github.ps1
-```
-
-## Technologies
+## Технологии
 
 - HTML5
 - CSS3 (Custom Properties)
-- Montserrat & Open Sans fonts
-- Responsive Grid & Flexbox layouts
+- Шрифты Montserrat & Open Sans
+- Адаптивные сетки и Flexbox
+
+
 
