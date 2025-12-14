@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - YouTalk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo" aria-label="YouTalk - Главная страница">
+                <img src="icons/logo.svg" alt="YouTalk" width="51" height="36">
+            </a>
+            
+            <nav class="header__nav" id="header-menu">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">О нас</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Тарифы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Для бизнеса</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Психологам</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Сертификат</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link header__menu-link--dropdown">
+                            Материалы
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.1 4.9L7 9.8L11.9 4.9" stroke="#333333" stroke-width="1"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="header__cta-button" type="button">
+                Подобрать психолога
+            </button>
+            
+            <button 
+                class="header__burger" 
+                type="button"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+                aria-controls="header-menu"
+            >
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <div class="breadcrumbs__container">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="/" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__separator" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.81 3.31L10.5 8L5.81 12.69" stroke="rgba(51, 51, 51, 0.70)" stroke-width="1"/>
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current" aria-current="page">Блог</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Page Title -->
+        <section class="page-title">
+            <div class="page-title__container">
+                <h1 class="page-title__heading">Блог</h1>
+            </div>
+        </section>
+
+        <!-- Tags Filter -->
+        <section class="tags">
+            <div class="tags__container">
+                <ul class="tags__list">
+                    <li class="tags__item">
+                        <button class="tag tag--active" type="button">
+                            <span class="tag__icon" aria-hidden="true">
+                                <img src="https://www.figma.com/api/mcp/asset/a6c9abce-c3a7-4b17-be90-88f6bad4c2cb" alt="" width="20" height="20">
+                            </span>
+                            <span class="tag__text">Все</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Самооценка и самопринятие</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag tag--active" type="button">
+                            <span class="tag__icon" aria-hidden="true">
+                                <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="20" height="20">
+                            </span>
+                            <span class="tag__text">Self</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Чувства и эмоции</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Тревога</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Упражнения</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Психология питания</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Насилие</span>
+                        </button>
+                    </li>
+                    <li class="tags__item">
+                        <button class="tag" type="button">
+                            <span class="tag__text">Личное здоровье</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog">
+            <div class="blog__container">
+                <div class="blog__grid">
+                    <!-- Big Card 1 -->
+                    <article class="card card--big">
+                        <a href="article.html" class="card__link">
+                            <div class="card__tags">
+                                <span class="card__tag">
+                                    <span class="card__tag-icon" aria-hidden="true">
+                                        <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                    </span>
+                                    <span class="card__tag-text">Самооценка и самопринятие</span>
+                                </span>
+                                <span class="card__tag">
+                                    <span class="card__tag-icon" aria-hidden="true">
+                                        <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                    </span>
+                                    <span class="card__tag-text">Self</span>
+                                </span>
+                            </div>
+                            <figure class="card__image-wrapper">
+                                <img class="card__image" src="https://www.figma.com/api/mcp/asset/5abd568a-5d39-48d8-a0e6-a3ab5df481f3" alt="Эмоциональное выгорание">
+                            </figure>
+                            <div class="card__content">
+                                <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
+                                <p class="card__author">Автор: Лиза Файнтух</p>
+                                <p class="card__excerpt">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                                <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Big Card 2 -->
+                    <article class="card card--big">
+                        <a href="article.html" class="card__link">
+                            <div class="card__tags">
+                                <span class="card__tag">
+                                    <span class="card__tag-icon" aria-hidden="true">
+                                        <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                    </span>
+                                    <span class="card__tag-text">Self</span>
+                                </span>
+                            </div>
+                            <figure class="card__image-wrapper">
+                                <img class="card__image" src="https://www.figma.com/api/mcp/asset/9c03f939-9572-4816-adc1-69dcb2676dc7" alt="Как не утонуть в тревоге">
+                            </figure>
+                            <div class="card__content">
+                                <h3 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h3>
+                                <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                                <p class="card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                                <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Regular Card 1 -->
+                    <article class="card">
+                        <a href="article.html" class="card__link">
+                        <div class="card__tags">
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Самооценка и самопринятие</span>
+                            </span>
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Психология питания</span>
+                            </span>
+                        </div>
+                        <figure class="card__image-wrapper">
+                            <img class="card__image" src="https://www.figma.com/api/mcp/asset/e0d0b03f-a52e-47c4-86cc-9927ae4d9962" alt="Эмоциональное выгорание">
+                        </figure>
+                        <div class="card__content">
+                            <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
+                            <p class="card__author">Автор: Лиза Файнтух</p>
+                            <p class="card__excerpt">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                            <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+                        </div>
+                        </a>
+                    </article>
+
+                    <!-- Regular Card 2 -->
+                    <article class="card">
+                        <a href="article.html" class="card__link">
+                        <div class="card__tags">
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Self</span>
+                            </span>
+                        </div>
+                        <figure class="card__image-wrapper">
+                            <img class="card__image" src="https://www.figma.com/api/mcp/asset/957454b1-4c3b-4e5c-9752-8c29e6e2b2c4" alt="Как не утонуть в тревоге">
+                        </figure>
+                        <div class="card__content">
+                            <h3 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h3>
+                            <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                            <p class="card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                            <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+                        </div>
+                        </a>
+                    </article>
+
+                    <!-- Regular Card 3 -->
+                    <article class="card">
+                        <a href="article.html" class="card__link">
+                        <div class="card__tags">
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Self</span>
+                            </span>
+                        </div>
+                        <figure class="card__image-wrapper">
+                            <img class="card__image" src="https://www.figma.com/api/mcp/asset/acef3ee9-106f-4c5b-b31a-278d83239d9c" alt="Как управлять своими эмоциями">
+                        </figure>
+                        <div class="card__content">
+                            <h3 class="card__title">Как управлять своими эмоциями:<br>8 шагов</h3>
+                            <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                            <p class="card__excerpt">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                            <time class="card__date" datetime="2021-08-07">07.08.2021</time>
+                        </div>
+                        </a>
+                    </article>
+
+                    <!-- Regular Card 4 -->
+                    <article class="card">
+                        <a href="article.html" class="card__link">
+                        <div class="card__tags">
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Самооценка и самопринятие</span>
+                            </span>
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Self</span>
+                            </span>
+                        </div>
+                        <figure class="card__image-wrapper">
+                            <img class="card__image" src="https://www.figma.com/api/mcp/asset/be2afb6e-cacb-4a8e-971d-02d760266cea" alt="Эмоциональное выгорание">
+                        </figure>
+                        <div class="card__content">
+                            <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
+                            <p class="card__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+                            <p class="card__excerpt">Изначально термин «эмоциональное я...</p>
+                            <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+                        </div>
+                        </a>
+                    </article>
+
+                    <!-- Regular Card 5 -->
+                    <article class="card">
+                        <a href="article.html" class="card__link">
+                        <div class="card__tags">
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Self</span>
+                            </span>
+                        </div>
+                        <figure class="card__image-wrapper">
+                            <img class="card__image" src="https://www.figma.com/api/mcp/asset/24765822-eff2-49ed-aabe-b002843a22c0" alt="Как не утонуть в тревоге">
+                        </figure>
+                        <div class="card__content">
+                            <h3 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h3>
+                            <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                            <p class="card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                            <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+                        </div>
+                        </a>
+                    </article>
+
+                    <!-- Regular Card 6 -->
+                    <article class="card">
+                        <a href="article.html" class="card__link">
+                        <div class="card__tags">
+                            <span class="card__tag">
+                                <span class="card__tag-icon" aria-hidden="true">
+                                    <img src="https://www.figma.com/api/mcp/asset/1cc0013c-d2be-4c2a-955e-210e049a31b5" alt="" width="18" height="18">
+                                </span>
+                                <span class="card__tag-text">Self</span>
+                            </span>
+                        </div>
+                        <figure class="card__image-wrapper">
+                            <img class="card__image" src="https://www.figma.com/api/mcp/asset/7c073d67-6f22-4dbd-b361-1bbf42fbbf62" alt="Как управлять своими эмоциями">
+                        </figure>
+                        <div class="card__content">
+                            <h3 class="card__title">Как управлять своими эмоциями:<br>8 шагов</h3>
+                            <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                            <p class="card__excerpt">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                            <time class="card__date" datetime="2021-08-07">07.08.2021</time>
+                        </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="blog__load-more">
+                    <button class="button button--primary" type="button">Ещё</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__heading">О нас</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Тарифы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Для бизнеса</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Психологам</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Блог</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Вебинары</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Подскаст</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Сертификат</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column footer__column--newsletter">
+                    <h3 class="footer__heading">Одно письмо в неделю со свежими новостями и акциями</h3>
+                    <form class="footer__newsletter" action="#" method="post">
+                        <div class="footer__newsletter-wrapper">
+                            <input 
+                                type="email" 
+                                class="footer__newsletter-input" 
+                                placeholder="Ваш e-mail" 
+                                required
+                                aria-label="Email для подписки"
+                            >
+                            <button class="footer__newsletter-button" type="submit" aria-label="Подписаться">
+                                <img src="icons/send.svg" alt="Отправить" width="24" height="24">
+                            </button>
+                        </div>
+                        <p class="footer__newsletter-disclaimer">
+                            Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности
+                        </p>
+                    </form>
+                </div>
+                
+                <div class="footer__column footer__column--social">
+                    <div class="footer__social">
+                        <div class="footer__skolkovo">
+                            <img src="icons/skolkovo.svg" alt="Skolkovo Участник" class="footer__skolkovo-logo">
+                        </div>
+                        <div class="footer__social-links">
+                            <a href="#" class="footer__social-link" aria-label="VK">
+                                <img src="icons/vk.svg" alt="VK" width="32" height="32">
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Telegram">
+                                <img src="icons/telegram.svg" alt="Telegram" width="32" height="32">
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter">
+                                <img src="icons/twitter.svg" alt="Twitter" width="32" height="32">
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Dzen">
+                                <img src="icons/dzen.svg" alt="Dzen" width="32" height="32">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">©Youtalk, 2018 – 2022</div>
+                <nav class="footer__legal">
+                    <a href="#" class="footer__legal-link">Юридические документы</a>
+                    <a href="#" class="footer__legal-link">Способы оплаты</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,275 @@
+/* Adaptive Styles */
+
+/* Tablet: 768px - 1199px */
+@media (max-width: 1199px) {
+    :root {
+        --container-padding: 40px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog__grid > .card--big:first-child {
+        grid-column: span 2;
+    }
+
+    .blog__grid > .card--big:nth-child(2) {
+        grid-column: span 2;
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer__column--newsletter {
+        grid-column: span 2;
+        max-width: 100%;
+    }
+
+    .footer__column--social {
+        grid-column: span 2;
+        align-items: flex-start;
+    }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+    :root {
+        --container-padding: 16px;
+        --font-size-3xl: 32px;
+    }
+
+    .header {
+        height: auto;
+        min-height: 76px;
+    }
+
+    .header__container {
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+
+    .header__cta-button {
+        order: 3;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .header__burger {
+        order: 2;
+    }
+
+    .page-title__heading {
+        font-size: var(--font-size-2xl);
+        line-height: 40px;
+    }
+
+    .tags__list {
+        gap: var(--spacing-sm);
+    }
+
+    .blog__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .blog__grid > .card--big:first-child {
+        grid-column: span 1;
+    }
+
+    .blog__grid > .card--big:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    .card--big {
+        height: auto;
+    }
+
+    .card__image-wrapper {
+        height: 200px;
+    }
+
+    .card--big .card__image-wrapper {
+        height: 200px;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .footer__column--newsletter {
+        grid-column: span 1;
+    }
+
+    .footer__column--social {
+        grid-column: span 1;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+
+    .footer__legal {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+}
+
+/* Desktop: 1200px and above */
+@media (min-width: 1200px) {
+    .header__nav {
+        display: flex;
+    }
+
+    .header__burger {
+        display: none;
+    }
+}
+
+/* Article Page Responsive Styles */
+
+/* Tablet: 768px - 1199px */
+@media (max-width: 1199px) {
+    .article__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .article__sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .article__image-text {
+        flex-direction: column;
+    }
+
+    .article__image-text-figure {
+        width: 100%;
+        height: 300px;
+    }
+
+    .article__images-grid {
+        flex-direction: column;
+    }
+
+    .article__images-grid-item .article__image-text-figure {
+        height: 300px;
+    }
+
+    .article__exercise-text {
+        width: 100%;
+    }
+
+    .cta-section__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta-section__illustration {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+    .article__title {
+        font-size: var(--font-size-2xl);
+        line-height: 40px;
+    }
+
+    .article__layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .article__sidebar {
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article__hero {
+        height: 250px;
+    }
+
+    .article__section-title {
+        font-size: var(--font-size-lg);
+        line-height: 26px;
+    }
+
+    .article__image-text {
+        flex-direction: column;
+    }
+
+    .article__image-text-figure {
+        width: 100%;
+        height: 250px;
+    }
+
+    .article__images-grid {
+        flex-direction: column;
+    }
+
+    .article__images-grid-item .article__image-text-figure {
+        height: 250px;
+    }
+
+    .article__exercise-text {
+        width: 100%;
+    }
+
+    .article__quote-image {
+        min-height: auto;
+        padding: var(--spacing-lg);
+    }
+
+    .article__quote-image-bg {
+        display: none;
+    }
+
+    .sidebar-card--psychologist {
+        height: auto;
+    }
+
+    .sidebar-card--gift {
+        height: auto;
+        min-height: 250px;
+    }
+
+    .sidebar-card--package {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .cta-section__title {
+        font-size: var(--font-size-2xl);
+        line-height: 40px;
+    }
+
+    .cta-section__container {
+        flex-direction: column;
+    }
+
+    .cta-section__illustration {
+        width: 100%;
+        height: 250px;
+    }
+}
+
