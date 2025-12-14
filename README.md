@@ -43,5 +43,10 @@ youtalk/
 - Шрифты Montserrat & Open Sans
 - Адаптивные сетки и Flexbox
 
+## Автор
 
+hlpne
 
+## Лицензия
+
+Проект создан для YouTalk.
